@@ -8,10 +8,10 @@ function hideRows (j, filter) {
     if (td) {
       txtValue = td.textContent.toUpperCase();
       console.log(txtValue);
-      // When txtValue matches filter then .indexOf(filter) will
-      // return value greater than -1 and the style.dusplay will not hide the row
+      // When txtValue string matches filter then .indexOf(filter) will
+      // return value greater than -1 and the style.display will hide the row.
       // But when equal to -1, style.display will be assigned to 'none'
-      // which will hide that table row 
+      // and not hide anything.
       if (txtValue.indexOf(filter) > -1) {
         tr[i].style.display = "";
       } else {
