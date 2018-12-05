@@ -40,7 +40,7 @@ var tbody = d3.select("tbody");
 });
 
 var filter = [];
-// D3 with pure JS Hiding Data Filters:
+// D3 with pure JS to hide row after submitting filter input:
 // Select the filter submit button id
 // Use D3 to prevent html page to 
 // refresh after clicking on filter button
@@ -49,7 +49,7 @@ var submit_city = d3.select("#filter-city-btn");
 var submit_state = d3.select("#filter-state-btn");
 var submit_country = d3.select("#filter-country-btn");
 var submit_shape = d3.select("#filter-shape-btn");
-// After you click on button do...
+// After entering a filter input and click on filter button do...
 submit_date.on("click", function(j=0) {
   // Prevent the page from refreshing
   d3.event.preventDefault();
